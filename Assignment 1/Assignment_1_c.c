@@ -34,7 +34,8 @@ void setdata()
 }
 int main()
 {
-    char cont = 'y', counter = 0, fprice = 0;
+    char cont = 'y';
+    int counter = 0, fprice = 0;
     setdata();
     printf("\n\t\t\tWelcome to the Store\n\nWhat do you want to buy?\n\n");
     while (cont == 'y')
