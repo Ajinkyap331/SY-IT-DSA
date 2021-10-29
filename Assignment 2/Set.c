@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define SIZE 5
 
-int Union(int arr1[], int arr2[], int size, int size1,  int arr3[])
+int Union(int arr1[], int arr2[], int size, int size1, int arr3[])
 {
     int i = 0;
     for (; i < size; i++)
@@ -79,25 +79,49 @@ void Accept(int arr[])
 void Display(int arr[], int len, char str[])
 {
     printf("%s : ", str);
+    printf("{ ");
     for (int i = 0; i < len; i++)
     {
-        printf("%d ", arr[i]);
+        printf("%d, ", arr[i]);
     }
+    printf("}");
 }
 
 int main()
 {
-    int A[SIZE], B[SIZE], C[SIZE*2];
+    int A[SIZE], B[SIZE], C[SIZE * 2];
     printf("Enter First set \n");
     Accept(A);
     printf("Enter Second set \n");
     Accept(B);
     Display(A, SIZE, "\nA");
     Display(B, SIZE, "\nB");
-    Display(C, Union(A, B, SIZE, SIZE, C), "\nUnion");
-    Display(C, Interection(A, B, C), "\nIntersection");
-    Display(C, Diff(A, B, C), "\nA-B");
-    Display(C, Diff(B, A, C), "\nB-A");
-    Display(C, Syy_Diff(A, B, C), "\nSymmetric_Difference");
+    int choice;
+    int cont = 1;
+    while (cont)
+    {
+        printf("\n\tWhat Do you want to Display :\n1. Union\n2. Intersection\n3. Difference\n4. Symmetric Difference\n");
+        scanf("%d", &choice);
+        switch (choice)
+        {
+        case 1:
+            Display(C, Union(A, B, SIZE, SIZE, C), "\nUnion");
+            break;
+        case 2:
+            Display(C, Interection(A, B, C), "\nIntersection");
+            break;
+        case 3:
+            Display(C, Diff(A, B, C), "\nA-B");
+            Display(C, Diff(B, A, C), "\nB-A");
+            break;
+        case 4:
+            Display(C, Syy_Diff(A, B, C), "\nSymmetric_Difference");
+            break;
+        default:
+            printf("Invalid Option");
+        }
+        printf("\nDo you want to Continue (1/0) : ");
+        scanf("%d", &cont);
+    }
     return 0;
 }
