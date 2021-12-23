@@ -1,0 +1,60 @@
+
+    Choose a Option : 
+1. Read the Passenger Data
+2. Add a Passenger
+3. Delete a Passenger
+4. Display All Passengers
+5. Exit
+1
+Enter thr PRN No. : 78
+Name : Pranav
+Age : 45
+Seat No. : 67
+PRN No. : 78
+
+
+    Choose a Option : 
+1. Read the Passenger Data
+2. Add a Passenger
+3. Delete a Passenger
+4. Display All Passengers
+5. Exit
+2
+Enter the Passeger Name : Zulpe
+Enter the Passenger Age : 30
+Enter the Passenger Seat No. : 67
+Enter The PRN number : 342
+
+
+    Choose a Option : 
+1. Read the Passenger Data
+2. Add a Passenger
+3. Delete a Passenger
+4. Display All Passengers
+5. Exit
+3
+Enter thr PRN No. which is to be deleted : 890
+
+
+    Choose a Option : 
+1. Read the Passenger Data
+2. Add a Passenger
+3. Delete a Passenger
+4. Display All Passengers
+5. Exit
+4
+
+Sr.No.  Name    Age Seat    PRN No.
+1.  Ajinkya 45  67  678
+2.  Pranav  45  67  78
+3.  Zulpe   30  67  342
+
+
+    Choose a Option : 
+1. Read the Passenger Data
+2. Add a Passenger
+3. Delete a Passenger
+4. Display All Passengers
+5. Exit
+5
+exit status 1
