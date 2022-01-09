@@ -168,6 +168,7 @@ int main()
             break;
         case 5:
             add(S[0], m, n);
+            break;
         case 6:
             return 0;
             break;
