@@ -137,6 +137,7 @@ void add(int *A, int m, int n)
         }
     }
     add[0][2] = cm;
+    printf("\n\t After Adding\n");
     display(add[0], cm +1 , 3);
 }
 
